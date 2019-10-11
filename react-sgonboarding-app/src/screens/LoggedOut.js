@@ -33,7 +33,7 @@ export default class LoggedOut extends Component {
 
   onCreateAccountPress() {
     const { navigation } = this.props;
-    navigation.navigate('UserIdentityScreen')
+    navigation.navigate('Features')
   }
 
   static onMoreOptionsPress() {

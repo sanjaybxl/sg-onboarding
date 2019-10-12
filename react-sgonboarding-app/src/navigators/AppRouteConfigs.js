@@ -7,19 +7,11 @@ import ForgotPassword from '../screens/ForgotPassword';
 import TurnOnNotifications from '../screens/TurnOnNotifications';
 import CreateUser from '../screens/CreateUser';
 import UserEmail from '../screens/UserEmail';
-import LoggedInTabNavigator from './LoggedInTabNavigator';
 import Features from '../screens/Features';
 import { UserIdentityScreen } from '../screens/UserIdentityScreen';
 
 const AppRouteConfigs = createStackNavigator({
   LoggedOut: { screen: LoggedOut },
-  LoggedIn: {
-    screen: LoggedInTabNavigator,
-    navigationOptions: {
-      header: null,
-      gesturesEnabled: false,
-    },
-  },
   LogIn: { screen: LogIn },
   ForgotPassword: { screen: ForgotPassword },
   TurnOnNotifications: { screen: TurnOnNotifications },
